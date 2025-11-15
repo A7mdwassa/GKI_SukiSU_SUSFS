@@ -149,7 +149,6 @@ jobs:
 
         Features:
         - ${{ inputs.kernelsu_variant }} (${{ inputs.kernelsu_branch }})
-        - **ඞ** SUSFS
         - Manual Syscall Hooks
         - Wireguard Support
         - BBR Support
@@ -158,12 +157,6 @@ jobs:
         Usage: 
           - Use [HorizonKernelFlasher](https://github.com/libxzr/HorizonKernelFlasher). Don't use Kernel Flasher, it is broken.
           - Another way (same as update), is, touch “Working”(status) card in SukiSU Ultra, touch GKI/non-GKI installation, touch Install Anykernel3, then select AnyKernel3 zip file.
-
-        > [!NOTE]  
-        > SUS SU Mode 2 will show as disabled or not compatble due to non-kprobe hooks and is not needed anymore! 
-
-        SUSFS manage WebUI: 
-        - https://github.com/sidex15/susfs4ksu-module
 
     steps:
       # Get Date
